@@ -1,94 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equix="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U.S. History Quiz</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Assets/style.css">
+    
+    <title>Quiz</title>
 </head>
-<body onload="NextQuestion(0)">
-    <main>
-        <!-- creating a modal for when quiz ends -->
-        <div class="modal-container" id="score-modal">
-          
-            <div class="modal-content-container">
-              
-                <h1>Congratulations, Quiz Completed.</h1>
-              
-                <div class="grade-details">
-                    <p>Attempts : 10</p>
-                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
-                    <p>Right Answers : <span id="right-answers"></span></p>
-                    <p>Grade : <span id="grade-percentage"></span>%</p>
-                    <p ><span id="remarks"></span></p>
-                </div>
-              
-                <div class="modal-button-container">
-                    <button onclick="closeScoreModal()">Continue</button>
-                </div>
-              
-            </div>
-        </div>
+<body>
+<div class="container">
 
-        <div class="game-quiz-container">
-          
-            <div class="game-details-container">
-                <h1>Score : <span id="player-score"></span> / 10</h1>
-                <h1> Question : <span id="question-number"></span> / 10</h1>
-            </div>
+<div id="scoreTracker" class="scoreTrac hide"> Score </div>
 
-            <div class="game-question-container">
-                <h1 id="display-question"></h1>
-            </div>
+<div id="timer" class="time hide">Timer : </div>
 
-            <div class="game-options-container">
-              
-               <div class="modal-container" id="option-modal">
-                 
-                    <div class="modal-content-container">
-                         <h1>Please Pick An Option</h1>
-                      
-                         <div class="modal-button-container">
-                            <button onclick="closeOptionModal()">Continue</button>
-                        </div>
-                      
-                    </div>
-                 
-               </div>
-              
-                <span>
-                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
-                    <label for="option-one" class="option" id="option-one-label"></label>
-                </span>
-              
+<div class="center"> <input type="text" placeholder="initials" id="initials" class="hide initials"> </div>
+<div id="head"><h1 class="center" >US History Quiz</h1></div>
+<div id="highscore" class="hide highscore">Scores</div>
 
-                <span>
-                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
-                    <label for="option-two" class="option" id="option-two-label"></label>
-                </span>
-              
+<div id="question-container" class="hide">
 
-                <span>
-                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
-                    <label for="option-three" class="option" id="option-three-label"></label>
-                </span>
-              
+<div id="questions" class="questions">Quetions</div>
 
-                <span>
-                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
-                    <label for="option-four" class="option" id="option-four-label"></label>
-                </span>
+<div id="answer-buttons" class="btn-grid hide">
+    <button class="btn">Answer 1</button>
+    <button class="btn">Answer 2</button>
+    <button class="btn">Answer 3</button>
+    <button class="btn">Answer 4</button>
+</div>
+</div>
+<div class="controls">
+<button id="startButton" class="start-btn btn"> Start Quiz </button>
+<button id="nextButton" class="next-btn btn hide"> Next </button>
+<button id="doneButton" class="next-btn btn hide"> Done</button>
+</div>
 
+</div>
+   
 
-            </div>
-
-            <div class="next-button-container">
-                <button onclick="handleNextQuestion()">Next Question</button>
-            </div>
-
-        </div>
-    </main>
-    <script src="script.js"></script>
+<script src="Assets/script.js"></script>
 </body>
+</html>
