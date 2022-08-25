@@ -1,65 +1,65 @@
 let question = [
     {
-        question: 'What is the fastest car?',
+        question: 'What is the name of the national anthem?',
         answers: [
-            {option: "TESLA" , correct: false},
-            {option: "FERARRI" , correct: false},
-            {option: "LAMBORGINI" , correct: false},
-            {option: "BULGATTI" , correct: true}
+            {option: "My Country Tis of Thee" , correct: false},
+            {option: "God Bless the U.S.A" , correct: false},
+            {option: "America the Beautiful" , correct: false},
+            {option: "The Star Bangled Banner" , correct: true}
         ]
     },
     {
-        question: 'What is the most expensive car?',
+        question: 'What was the main concern of the United States during the Cold War?',
         answers: [
-            {option: "TESLA" , correct: false},
-            {option: "FERARRI" , correct: false},
-            {option: "LAMBORGINI" , correct: false},
-            {option: "BULGATTI" , correct: true}
+            {option: "Slavery" , correct: false},
+            {option: "Great Depression" , correct: false},
+            {option: "Climate Change" , correct: false},
+            {option: "Communism" , correct: true}
         ]
     },
     {
-        question: 'Which car is all Electric?',
+        question: 'What was One of the Thirteen Colonies?',
         answers: [
-            {option: "TESLA" , correct: true},
-            {option: "FERARRI" , correct: false},
-            {option: "LAMBORGINI" , correct: false},
-            {option: "BULGATTI" , correct: false}
+            {option: "Georgia" , correct: true},
+            {option: "Ohio" , correct: false},
+            {option: "California" , correct: false},
+            {option: "Soviet Union" , correct: false}
         ]
     },
     {
-        question: 'Which car is American?',
+        question: 'What did Martin Luther King, Jr. do?',
         answers: [
-            {option: "TESLA" , correct: true},
-            {option: "FERARRI" , correct: false},
-            {option: "LAMBORGINI" , correct: false},
-            {option: "BULGATTI" , correct: false}
+            {option: "Fought for civil rights" , correct: true},
+            {option: "Became a U.S. Senator" , correct: false},
+            {option: "Fought for women's suffrage" , correct: false},
+            {option: "Ran for the president of the United States" , correct: false}
         ]
     },
     {
-        question: 'Which car is had the most f1 titles?',
+        question: 'Why did the United States enter the Korean War?',
         answers: [
-            {option: "TESLA" , correct: false},
-            {option: "FERARRI" , correct: true},
-            {option: "LAMBORGINI" , correct: false},
-            {option: "BULGATTI" , correct: false}
+            {option: "It was rich in resources" , correct: false},
+            {option: "Stop the spread of communism" , correct: true},
+            {option: "Stop the spread of fascism" , correct: false},
+            {option: "Fight the Japanese" , correct: false}
         ]
     },
     {
-        question: 'Which car logo has a Bull?',
+        question: 'Why did the United States enter the Persian Gulf War?',
         answers: [
-            {option: "TESLA" , correct: false},
-            {option: "FERARRI" , correct: false},
-            {option: "LAMBORGINI" , correct: true},
-            {option: "BULGATTI" , correct: false}
+            {option: "Stop the spread of communism" , correct: false},
+            {option: "Stop the spread of Iran's influence" , correct: false},
+            {option: "To force the Iraqi military from Kuwait" , correct: true},
+            {option: "for its resources" , correct: false}
         ]
     },
     {
-        question: 'Finish the movie title: Ford vs _______?',
+        question: 'What was one important thing that Abraham Lincoln did?',
         answers: [
-            {option: "TESLA" , correct: false},
-            {option: "FERARRI" , correct: true},
-            {option: "LAMBORGINI" , correct: false},
-            {option: "BULGATTI" , correct: false}
+            {option: "Purchased Alaska" , correct: false},
+            {option: "Saved (or preserved) the Union" , correct: true},
+            {option: "Established the United Nations" , correct: false},
+            {option: "Declared war on Great Britain" , correct: false}
         ]
     },
     
