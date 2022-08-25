@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Quiz</title>
+</head>
+<body>
+<div class="container">
+
+<div id="scoreTracker" class="scoreTrac hide"> Score </div>
+
+<div id="timer" class="time hide">Timer : </div>
+
+<div class="center"> <input type="text" placeholder="initials" id="initials" class="hide initials"> </div>
+<div id="head"><h1 class="center" >US History Quiz</h1></div>
+<div id="highscore" class="hide highscore">Scores</div>
+
+<div id="question-container" class="hide">
+
+<div id="questions" class="questions">Quetions</div>
+
+<div id="answer-buttons" class="btn-grid hide">
+    <button class="btn">Answer 1</button>
+    <button class="btn">Answer 2</button>
+    <button class="btn">Answer 3</button>
+    <button class="btn">Answer 4</button>
+</div>
+</div>
+<div class="controls">
+<button id="startButton" class="start-btn btn"> Start Quiz </button>
+<button id="nextButton" class="next-btn btn hide"> Next </button>
+<button id="doneButton" class="next-btn btn hide"> Done</button>
+</div>
+
+</div>
+   
+
+<script src="Assets/script.js"></script>
+</body>
+</html>
