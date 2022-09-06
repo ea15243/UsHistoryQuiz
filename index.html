@@ -1,49 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html id="html" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-
+    <link rel="stylesheet" href="https://use.typekit.net/trj0jfc.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <script src="https://kit.fontawesome.com/c622ef30be.js" crossorigin="anonymous"></script>
     <title>U.S. History Quiz</title>
 </head>
-
 <body>
-    <div class="container">
+    <header id="highScore-menu">
+        
+        <div id="highScore-text" class="highScore__text">High Scores</div>
+        <div id="menu-bar" class="highScore__bar"></div>
+            <div id="settings-container" class="settings__container">
 
-        <div id="scoreTracker" class="scoreTrac hide"> Score </div>
+                <div id="difficulty-container">
+                    <label id="difficulty" class="toggle" for="difficultyToggle">
+                        <input class="toggle__input" name="difficulty" type="checkbox" role="switch" id="difficultyToggle">
+                        <div class="toggle__fill"></div>
+                    </label>
+                    <div id="difficultyMode-title" class="settings__item">
+                        <div id="settings-difficultyEasy-icon" class="">Easy mode</div>
+                        <div id="settings-difficultyHard-icon" class="hide">Hard mode</div>
+                    </div>
+                </div>
 
-        <div id="timer" class="time hide">Timer : </div>
-
-        <div class="center"><input type="text" placeholder="initials" id="initials" class="hide initials"> </div>
-        <div id="head">
-            <h1 class="center">US History Quiz</h1>
-        </div>
-        <div id="highscore" class="hide highscore">Scores</div>
-
-        <div id="question-container" class="hide">
-
-            <div id="questions" class="questions">Questions</div>
-
-            <div id="answer-buttons" class="btn-grid hide">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+                <div id="audio-container">
+                    <label id="audio" class="toggle" for="audioToggle">
+                        <input class="toggle__input" name="audio" type="checkbox" role="switch" id="audioToggle">
+                        <div class="toggle__fill"></div>
+                    </label>
+                    <div id="audioMode-title" class="settings__item">
+                        <div id="settings-audioOn-icon" class=""><i class="fa-solid fa-volume-high"></i></div>
+                        <div id="settings-audioOff-icon" class="hide"><i class="fa-solid fa-volume-xmark"></i></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="controls">
-            <button id="startButton" class="start-btn btn"> Start Quiz </button>
-            <button id="nextButton" class="next-btn btn hide"> Next </button>
-            <button id="doneButton" class="next-btn btn hide"> Done</button>
+
+        <div id="timer-container" class="timer__container hide">
+            <div id="timer" class="timer"></div>
+        </div>
+    </header>
+
+    <main id="quiz-card">
+        <div id="title-container" class="title__container">
+            <h1 id="quiz-title" class="quiz__title">
+                JavaScript
+            </h1>
+
+            <h2 id="quiz-subtitle" class="thin">
+                Coding quiz
+            </h2>
+
+            <button id="quiz-start-btn" class="start__btn">START</button>
         </div>
 
-    </div>
+        <div id="quiz-container" class="quiz__container hide">
+            <div class="question__container">
+                <div id="question"></div>
+            </div>
 
+            <div id="answer-btn-container" class="answerButtons__container">
+                <button id="answer-btn" class="btn"></button>
+                <button id="answer-btn" class="btn"></button>
+                <button id="answer-btn" class="btn"></button>
+                <button id="answer-btn" class="btn"></button>
+            </div>
+        </div>
 
-    <script src="./assets/script.js"></script>
+        <div id="quiz-complete-container" class="quiz__complete__container hide">
+            <h2 class="quiz__complete__text">
+                Quiz complete
+            </h2>
+
+            <h3 class="quiz__score__header">
+                Final score:
+            </h3>
+
+            <p id="quiz-score" class="quiz__score"></p>
+
+            <label id="initials-label" class="initials__label" for="initials">type initials to save your score</label>
+            <input class="initials" type="text" id="initials" maxlength="3" name="initials">
+
+            <div id="quiz-controlBtn-container" class="quiz__controlBtn__container">
+            <button id="quiz-restart-btn" class="restart__btn hide">RESTART</button>
+            </div>
+        </div>
+
+        <div id="highScores-container" class="highScore__scores__container hide">
+            <h2 class="highScore__scores__header">
+                High Scores
+            </h2>
+
+            <div id="highScores-list" class="highScore__scores__list">
+            </div>
+        </div>
+    </main>
+    <script defer src="./assets/script.js"></script>
 </body>
-
 </html>
