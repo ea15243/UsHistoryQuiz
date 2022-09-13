@@ -411,69 +411,187 @@ function selectedAnswer(e) {
     
 }
 
-const questions = [
-  {
-    question: 'What is the name of the national anthem?',
-    answers: [
-        {option: "My Country Tis of Thee" , correct: false},
-        {option: "God Bless the U.S.A" , correct: false},
-        {option: "America the Beautiful" , correct: false},
-        {option: "The Star Bangled Banner" , correct: true}
-    ]
-},
-{
-    question: 'What was the main concern of the United States during the Cold War?',
-    answers: [
-        {option: "Slavery" , correct: false},
-        {option: "Great Depression" , correct: false},
-        {option: "Climate Change" , correct: false},
-        {option: "Communism" , correct: true}
-    ]
-},
-{
-    question: 'What was One of the Thirteen Colonies?',
-    answers: [
-        {option: "Georgia" , correct: true},
-        {option: "Ohio" , correct: false},
-        {option: "California" , correct: false},
-        {option: "Soviet Union" , correct: false}
-    ]
-},
-{
-    question: 'What did Martin Luther King, Jr. do?',
-    answers: [
-        {option: "Fought for civil rights" , correct: true},
-        {option: "Became a U.S. Senator" , correct: false},
-        {option: "Fought for women's suffrage" , correct: false},
-        {option: "Ran for the president of the United States" , correct: false}
-    ]
-},
-{
-    question: 'Why did the United States enter the Korean War?',
-    answers: [
-        {option: "It was rich in resources" , correct: false},
-        {option: "Stop the spread of communism" , correct: true},
-        {option: "Stop the spread of fascism" , correct: false},
-        {option: "Fight the Japanese" , correct: false}
-    ]
-},
-{
-    question: 'Why did the United States enter the Persian Gulf War?',
-    answers: [
-        {option: "Stop the spread of communism" , correct: false},
-        {option: "Stop the spread of Iran's influence" , correct: false},
-        {option: "To force the Iraqi military from Kuwait" , correct: true},
-        {option: "for its resources" , correct: false}
-    ]
-},
-{
-    question: 'What was one important thing that Abraham Lincoln did?',
-    answers: [
-        {option: "Purchased Alaska" , correct: false},
-        {option: "Saved (or preserved) the Union" , correct: true},
-        {option: "Established the United Nations" , correct: false},
-        {option: "Declared war on Great Britain" , correct: false}
-    ]
-},
-
+let questions = [
+    {
+        question: "What is the name of the U.S. National Anthem?",
+        answers: [
+            {text: "The Star Spangled Banner", correct: true},
+            {text: "America the Beautiful", correct: false},
+            {text: "My Country Tis of Thee", correct: false},
+            {text: "God Bless The Queen", correct: false},
+        ]
+    },
+    {
+        question: "What was the main concern of the United States during the Cold War?",
+        answers: [
+            {text: "Communism", correct: true},
+            {text: "Slavery", correct: false},
+            {text: "Great Depression", correct: false},
+            {text: "Climate Change", correct: false}
+        ]
+    },
+    {
+        question: "What was One of the Thirteen Colonies?",
+        answers: [
+            {text: "Ohio", correct: false},
+            {text: "California", correct: false},
+            {text: "Georgia", correct: true},
+            {text: "Hawaii", correct: false}
+        ]
+    },
+    {
+        question: "What did Martin Luther King, Jr. do?'",
+        answers: [
+            {text: "Ran for the president of the United States", correct: false},
+            {text: "Fought for women's suffrage", correct: false},
+            {text: "Became a U.S. Senator", correct: false},
+            {text: "Fought for civil rights", correct: true}
+        ]
+    },
+    {
+        question: "Why did the United States enter the Korean War?",
+        answers: [
+            {text: "It was rich in resources", correct: false},
+            {text: "Stop the spread of communism", correct: true},
+            {text: "Stop the spread of fascism", correct: false},
+            {text: "Fight the Japanese", correct: false}
+        ]
+    },
+    {
+        question: "Why did the United States enter the Persian Gulf War?",
+        answers: [
+            {text: "Stop the spread of communism", correct: false},
+            {text: "Stop the spread of Iran's influence", correct: false},
+            {text: "To force the Iraqi military from Kuwait", correct: true},
+            {text: "for its resources", correct: false}
+        ]
+    },
+    {
+        question: "What was one important thing that Abraham Lincoln did?",
+        answers: [
+            {text: "Declared war on Great Britain", correct: false},
+            {text: "Established the United Nations", correct: false},
+            {text: "Purchased Alaska", correct: false},
+            {text: "Saved (or preserved) the Union", correct: true}
+        ]
+    },
+    {
+        question: "What are three rights of everyone living in the United States?",
+        answers: [
+            {text: "Freedom to petition the government, freedom of expression and freedom to disobey traffic laws", correct: false},
+            {text: "Freedom of speech, freedom of expression and freedom to run for president", correct: false},
+            {text: "Freedom of religion, freedom of expression and freedom to make treaties with other countries", correct: false},
+            {text: "Freedom of speech, freedom of religion and freedom of expression", correct: true}
+        ]
+    },
+    {
+        question: "Who was the first President of USA?",
+        answers: [
+            {text: "Donald Trump", correct: false},
+            {text: "Barack Obama", correct: false},
+            {text: "Abraham Lincoln", correct: false},
+            {text: "George Washington", correct: true}
+        ]
+    },
+    {
+        question: "What is the responsibility that is only for U.S. Citizens?",
+        answers: [
+            {text: "Serve on a jury", correct: true},
+            {text: "Obey the law", correct: false},
+            {text: "Be respectful of others", correct: false},
+            {text: "Pay taxes", correct: false}
+        ]
+    },
+]
+let questionsHard = [
+    {
+        question: "What territory did the U.S. Buy from France in 1803? ",
+        answers: [
+            {text: "Minnesota", correct: false},
+            {text: "Alabama", correct: false},
+            {text: "Louisiana", correct: true},
+            {text: "Colorado", correct: false},
+        ]
+    },
+    {
+        question: "The Civil War had many important events. Name one.?",
+        answers: [
+            {text: "14th Ammendment", correct: false},
+            {text: "Lincoln assassination", correct: false},
+            {text: "War of 1812", correct: false},
+            {text: "Emancipation Proclamation", correct: true}
+        ]
+    },
+    {
+        question: "Name the U.S. War between the North and the South.",
+        answers: [
+            {text: "The war of 1812", correct: false},
+            {text: "The Civil War", correct: true},
+            {text: "World War II", correct: false},
+            {text: "Ukraine War", correct: false}
+        ]
+    },
+    {
+        question: "What U.S. war ended slavery?",
+        answers: [
+            {text: "The Civil War", correct: true},
+            {text: "The Revolutionary War", correct: false},
+            {text: "War of 1812", correct: false},
+            {text: "World War III", correct: false}
+        ]
+    },
+    {
+        question: "What is Veterans Day?",
+        answers: [
+            {text: "A holiday to honor soldiers who died in military service", correct: true},
+            {text: "A holiday to honor the people who died fighting for civil rights", correct: false},
+            {text: "A holiday that recognizes everyone who served in the Armed Forces", correct: true},
+            {text: "A holiday to honor the victims of 9/11", correct: false}
+        ]
+    },
+    {
+        question: "Name two national U.S. holidays.",
+        answers: [
+            {text: "Valentine's Day and President's Day", correct: false},
+            {text: "April Fool's Day and Labor Day", correct: false},
+            {text: "Labor Day and Thanksgiving", correct: true},
+            {text: "Citizenship Day and Columbus Day", correct: false}
+        ]
+    },
+    {
+        question: "What movement tried to end racial discrimination?",
+        answers: [
+            {text: "Civil rights movement", correct: true},
+            {text: "Women's suffrage", correct: false},
+            {text: "Prohibition", correct: false},
+            {text: "Conservation", correct: false}
+        ]
+    },
+    {
+        question: "Who was the United States’ main rival during the Cold War?",
+        answers: [
+            {text: "Austrailia", correct: false},
+            {text: "Great Brittain", correct: false},
+            {text: "China", correct: false},
+            {text: "The Soviet Union", correct: true}
+        ]
+    },
+    {
+        question: "When did the Great Depression Start?",
+        answers: [
+            {text: "2020", correct: false},
+            {text: "1929", correct: true},
+            {text: "2014", correct: false},
+            {text: "1914", correct: false}
+        ]
+    },
+    {
+        question: "Name one example of an American innovation",
+        answers: [
+            {text: "Skyscrapers", correct: false},
+            {text: "Light bulb", correct: true},
+            {text: "Assembly line", correct: false},
+            {text: "All of the above", correct: false}
+        ]
+    },
 ]

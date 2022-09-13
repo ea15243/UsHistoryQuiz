@@ -25,7 +25,7 @@
 }
 
 html {
-    background-image: url("/assets/img/paper.jpeg");
+    background-image: url("../assets/img/paper.jpeg");
     background-color: white;
     width: 100vw;
     background-size: cover;
